@@ -1,0 +1,75 @@
+.skills-uno{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);   
+    padding: 4rem;
+    font-size: 1.5rem;
+    justify-items: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.skills-dos{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);   
+    padding: 4rem;
+    justify-items: center;
+    align-items: center;
+    font-size: 1.5rem;
+    gap: 2rem;
+}
+
+.skills .leftside{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.skills .rigthside{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+/*___________________________________________________________*/
+
+.skills .title{
+    grid-column: 1 / 3;
+}
+
+/*___________________________________________________________*/
+
+.skills-uno .leftside{
+    grid-column: 1 / 2;
+}
+
+/*___________________________________________________________*/
+
+.skills-uno .rigthside{
+    grid-column: 2 / 3;
+}
+
+/*___________________________________________________________*/
+
+.skills-dos .leftside{
+    grid-column: 1 / 2;
+}
+
+/*___________________________________________________________*/
+
+.skills-dos .rigthside{
+    grid-column: 2 / 3;
+}
+
+.skills-dos .rigthside .images{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+}
+
+.skills-dos .rigthside .images img{
+    margin-bottom: 2rem;
+}
+

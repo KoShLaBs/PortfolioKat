@@ -1,0 +1,47 @@
+.index{
+    display: grid;
+    grid-template-rows: (3, 2fr);
+    grid-auto-rows: minmax(100px, auto);      
+}
+
+/*___________________________________________________________*/
+
+.name{
+    grid-column: 1 ;
+    grid-row: 1 / 2;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.5rem;
+}
+
+.texto-linea{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.texto-lineados{
+    margin-left: 8rem;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+/*___________________________________________________________*/
+
+.about{
+    grid-column: 1 ;
+    grid-row: 4 / 5;
+
+    padding: 4rem;
+}
+
+/*___________________________________________________________*/
+
+.footer{
+    grid-column: 1 ;
+    grid-row: 7 / 8;
+}

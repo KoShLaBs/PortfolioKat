@@ -1,0 +1,31 @@
+/*<header>
+        <img src="" alt="Katherynn Gomez">
+        <div class="menu">
+            <nav >    
+                <ul >
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="PAGES/projects.html">Projects</a></li>
+                    <li><a href="PAGES/skills.html">Skills</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>*/
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 5rem;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    justify-content: space-around;
+    color: #1E1E1E;
+}
+
+nav ul{
+    list-style: none;
+}

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Skills</title>
+    <link rel="stylesheet" href="../STYLES/style.css">
 </head>
 <body>
      <!--Header of the page, logo, and menu-->
@@ -19,20 +20,20 @@
             </nav>
         </div>
     </header>
-    <main>
+    <main class="skills">
         <!--title of the page-->
         <div class="title">
             <h1 class="black">Skills</h1>
             <!--idea is to change this three icons with animation-->
             <div class="languages">
                 <img src="../ASSESTS/java.svg" alt="Java">
-                <img src="../ASSESTS/react.svg" alt="React">
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAABC0lEQVR4nGNgGAUjDkRU1XpHVNc/iaiu/08NHF5V9zi8qtaToMUghdSyFI6r6h8R9jG1LYVihlGL0cFoUEfQO3FFVtWbwcSiKuqVwqvrd0DlPCJqagxh6qJqa43BYvj1/CfJYhAOr6o7HFZbaxpaXa1IjMU49PwnyeKw6nqXiOq6f5FVtcGxFRXCMIvj6+sFwqvrQkE4qqJCENliHHr+k2RxWloaq19pKW9oaChzRFX9BJjFkfX1IuFV9WkgDGIjW4xDz3/SfFxVbxRRVbc/vLr+GVJCwRvUOPT8JyOoMVIofoux6/lPtMWjZXXEaO1UPVzq4/CBavqEV9V6UtXyqvpHoHxO0OJRMOwAAMWDHZipxU3CAAAAAElFTkSuQmCC" alt="PHP">
+                <!-- <img src="../ASSESTS/react.svg" alt="React">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAACXBIWXMAAAsTAAALEwEAmpwYAAADaUlEQVR4nO2d30tUQRTHl6L+vaLa5hjRU0gvvfXSnHXGoihTqB7CwJAgsQhKWzOIHgqht7KSwN38kdCD+BBhm1LL6sSsRK7rbm547xlnvx84b/fCOd/vzDlzX+5kMgAAAAAAAAAAAAAAtEDW2oOKjVLaDpO2BcX2B7F1MYXyNfnafI3n7XFfcxCLpEN3HVVs5qQForRD21mVs0fEhM9ms/sV2z5xIVjaCNNrrd2XugEQ3/5tT9r0pN52xFcehxUdOXs4FfH98PH9T7pgCi20nU9lMPvTjnixHGYoNtnEDSA296ULpVBD26HEDVDafhIvlAMNbQuJG0DalMQL5UBDm1LyBkgXyWEHDGAYIL4KCTtAXghCC5IXgwQCM4BhgPgqJOwAeSEILUheDBIIzACGAeKrkLAD5IUgtCB5MUggMAMYBoivQsIOkBeC0II2RKisrblGrK+vu+8rK25qds71PxpxJ7ou1Am3mZ/lckNht7LbeezZGdCs8K1Mf15wpy/3pG7ATvJoCwM8H+fmXUeuW9SA7fKIxoDB/LgbGM1X486TMff6w1Rd8TcePEzcgFbziMaAU92X6p55+Way5pm3hWLiBrSaR9QG5PoHap75ViqJGNAsj6gNOHOlt+aZSqUiYkCzPKI24NzNWzXPlFZXRQxolkfUBoy8mqg7BjYSdqfsdh7RGLD59DGYH3cT795XP4Q2c/fps8QNaDWPaAz4F1+WlmpWZ1IGtJpHWxiwsLjozvZdr3l/61Acfv5i29hNA7bLI0oDfpXL7uvyspssFN3tx6PupLlY934aX8I7ySMaA1p9PykD/ldgGMAwADuA0YIcWhBmgMMQZgxhnII48GNou0UGBlgYIL0KCTtAXghCC5IXgwQCM4BhgPgqJOwAeSEILUheDBIIzACGAeKrkLAD5IUgtCB5MUggMAMYBoivQsIOkBeCom1B+GmfayS+0mY5hRlgitKrjAINxWY6cQOq/88PoFgKMBSbe4kb4C8vkC6UQo2cPZa4AZ2dnQeIzYx4sRxW+EssUrtVw98cIV0wBRZKdx3KpIm/OUK6aAonrmbSxl/bQWyvBVC8k749Q+QKkz/4myPacyaYmdTbTrPB7C8v8P/P92fhKD/WtClt1GaH/GnH1yytOwAAAAAAAAAAAADI7Cl+A3FRicKQu7p+AAAAAElFTkSuQmCC" class="php" alt="PHP">
                 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAABbElEQVR4nO2WMUsDQRCFTysLQUULK5uUWljYitiIwfoym4DkZ+RuJjfvbyiCIFpYa2tnaWVhY6UxiiKoSCAQ1JNLNiaIksI9lJiBV+yyux/zdmdYzxvEvwvD0ZoRVI0gdiFivSKOsj3ByUJX0A8xKr0zdg218gbgv271Cwlqn+eM4Dk1MAkO1oNgsgiME+O8NacnPjDtA6OGsd99ODEunIALjHnD2GtmzfraBIfRohHdNKyHfgkzRvTNOZgEKyS6ToKGHTcADJPoKQluWzC9dg42SRcrl2fzYbRErHVivbOw+8QFz/OGjOhZGuCYWB9JJGMY20nGFnZJghu7p5qG1bXkDnNhtEyiW7YFLhjRnc4dp/C4SCSTB6aaVndK6ih55UVghBgb3Yf7pdJYIQgmbLn9KOOGETx9YX+dRHdzIeaI9diufWjLVQOJv1NSYu0y66uWGQ/AxrXV9FtfH+Io6xTOqBjBak/wIPou3gEkFiWy/NiysAAAAABJRU5ErkJggg==" alt="SQL Database">
                 <img src="../ASSESTS/html.svg" alt="HTML">
                 <img src="../ASSESTS/css.svg" alt="CSS">
                 <img src="../ASSESTS/js.svg" alt="JavaScript">
-                <h1 class="blue">SASS</h1>
+                <h1 class="blue sass">SASS</h1> -->
             </div>
         </div>
         <!--Part to divide the pages-->
@@ -52,8 +53,8 @@
                 <div class="images">
                     <img src="../ASSESTS/js.svg" alt="JavaScript">
                     <img src="../ASSESTS/java.svg" alt="Java">
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAABC0lEQVR4nGNgGAUjDkRU1XpHVNc/iaiu/08NHF5V9zi8qtaToMUghdSyFI6r6h8R9jG1LYVihlGL0cFoUEfQO3FFVtWbwcSiKuqVwqvrd0DlPCJqagxh6qJqa43BYvj1/CfJYhAOr6o7HFZbaxpaXa1IjMU49PwnyeKw6nqXiOq6f5FVtcGxFRXCMIvj6+sFwqvrQkE4qqJCENliHHr+k2RxWloaq19pKW9oaChzRFX9BJjFkfX1IuFV9WkgDGIjW4xDz3/SfFxVbxRRVbc/vLr+GVJCwRvUOPT8JyOoMVIofoux6/lPtMWjZXXEaO1UPVzq4/CBavqEV9V6UtXyqvpHoHxO0OJRMOwAAMWDHZipxU3CAAAAAElFTkSuQmCC" alt="PHP">
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAABbElEQVR4nO2WMUsDQRCFTysLQUULK5uUWljYitiIwfoym4DkZ+RuJjfvbyiCIFpYa2tnaWVhY6UxiiKoSCAQ1JNLNiaIksI9lJiBV+yyux/zdmdYzxvEvwvD0ZoRVI0gdiFivSKOsj3ByUJX0A8xKr0zdg218gbgv271Cwlqn+eM4Dk1MAkO1oNgsgiME+O8NacnPjDtA6OGsd99ODEunIALjHnD2GtmzfraBIfRohHdNKyHfgkzRvTNOZgEKyS6ToKGHTcADJPoKQluWzC9dg42SRcrl2fzYbRErHVivbOw+8QFz/OGjOhZGuCYWB9JJGMY20nGFnZJghu7p5qG1bXkDnNhtEyiW7YFLhjRnc4dp/C4SCSTB6aaVndK6ih55UVghBgb3Yf7pdJYIQgmbLn9KOOGETx9YX+dRHdzIeaI9diufWjLVQOJv1NSYu0y66uWGQ/AxrXV9FtfH+Io6xTOqBjBak/wIPou3gEkFiWy/NiysAAAAABJRU5ErkJggg==" alt="SQL Database">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD2ElEQVR4nO2dP6gUVxTGJzEmIEFETCBBkkos/BPEVEmRFAlaKBri7D37nmDlAxUTrGTOmblfmyKECKmCpc8+tSKkTkgtWNmoICiK+KeIL8zLW9l9irvPvXLujt8Hp9r7dub+fnPuzM5jmKJgGIZhGIZhGIbJNFJhd1BcDIZbYlhiYTwDjTfF4mKvws6kMkKFOdH4hBLwqgfi414FSdYZlIHpVwSNT5J0SrtMsTOQZolWXJheCM8ZS8kOSI03pxYiFp+yQ5BESND4bwIhvKKShAwoxPI6oCjE/CVQiPmDpxDzh00h5g+YQswfKoWYP0gKMX94FGL+wCgkA0hCIf5ghEL8YUgGxVsn5i+BQswfPIWYP2wKMX/AFGL+UCnE/EFSiPnDoxDzB0YhGUASCvEHIxTiD0MyKN46MX8JFGL+4LMUEgxfv+y7FxYW1s8DW4PFIBovTToRsXh8su3HE+PmMm7+B4ANZV1v7ytOiuJqp4W86DmUoPFRTkKG8xXwTlD88sYIaSMVjuYq5Nn3KM7PvJBeXX828nn7RFa7BCh+nQc2rtrmFQ8hoY4/rvr8flD8I4ofiqJ4azDuGLApGO50S8hoXXnuETrLQsjwXOLIWMXvXRayNNc0ewdj58w+zU6IxrtlWa4b2odjnRbSdkWxkv2nT7+Xm5DlAj5+Nh9t9nVaSF+bg4OxJbA5PyHx6fC5TrT5rrNCgsZ77YmyGIAxfPGyifSBLe0SN67KqvogmRCNf46MNWhXhdwP2hxaNdmfk09kKiHxWr+ut43uY/xrpoUcBT4MGs8OSup4pl/jcLs8DW+vPItPguGBhxBRfD6yjxZPSdV8WwLvDo/ra/P9qzLJRsgk6QNblq/7x0ykFRkUf48rqXFk3FzWzKOu97RXXJ0WAuBtqdATi9cnmYjHL/USeP//rsHDaZgUuQiZV/1IDD8NV1D8FjT+ETTeXstE5DUJ6VXNl6v3ceU2yeVpRczcZW8OQsK43yEUAgphh4AdwiVrDeE5BDyHyAsg9AzfDGrS/9oFi+eG/+6NP6m/7isWmcFyXbJYoBDJ/EBgh5i/BAoxf/AUYv6wKcT8AVOI+UOlEPMHSSHmD49CzB8YhWQASSjEH4xQiD8MyaB468T8JVCI+YOnEPOHTSHmD5hCzB8qhZg/SAoxf3gUYv7AKCQDSEIh/mCEQvxhSAbFWyfWOSF8saTk9GJJvnoV6YQYbqTokEXvNpeuVIqXE8/V9S6+vhsphDyWut4xtZCVLulTCqaTUaFXpMxyp1hcbNdB99a32ahlVooLyTqDYRiGYRiGYRimSJ//AGhcAV36NevIAAAAAElFTkSuQmCC" alt="PHP">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAE/ElEQVR4nO2dW4gcRRSGd43EW1AUEVTwAoqXR5G8CAriZVERBHuqZrMg+KKiCy5Bd+ecmfO7Gi+gPhghioiiDyq+KIhKVERFRFCEgAQFHxRjfFE00TVZ8UbvbrS7p3d2J93htJv/h3qZruqZ+b86daqqe3pGRiiKoiiKoiiKohqqdhfXRMU7UbE3Kv5mwWo82BvF3o6KsVphBMU9BIBqnVAMdUYGI0Kre9CS3tWVgSwNUwSi1T0IirfqAMKcobV1yJ/rAMLo0Po8IBBtVociEPWHQCDqbzyBqL/ZBKL+BhOI+ptKIOpvJIGov3kEov6GEUgDTIoE4m9MJBB/M2IDCrdO1B8Cgai/8QSi/mYTiPobTCDqbyqBqL+RBKL+5hGI+htGIA0wKRKIvzGRQPzNiA0o3DpRfwgEov7Grx0ggq+C2CtR7dkg9mZU+2aFNrui4uUg2Jq2C4oflqsbBJ8Hwaf/FsXvBLK8se+2BBeV9InRoJjpB2fzUe32BFifrZwAG4LigbL3SDq4MNfZxL4nkPKoeD5JknUDonRLoc0fsdO7clBkB4UQyEEMUUHw9U3A0QOHTbHXCu22lEVSLlKSZF1Q+4QRMiwQxUzWyLZgYxB8nN66HwU7o9jD2aEliP20CTj+QP3LgCOj4o0oNheld0MOZActAhkSSKvTuyQfDfhicBt7vFD/5gysbwEcceDY2OTkUUHxK3PIMBHS7V5QGJ5+HOZnYYszsoGJO/3RJZP6qqEUknMoScY5w6enTygA+S4/BFooAHmUQIZbd2wrZucouDWK/VJSf1cucQMbSurcnTuX2iSBDAXE5trd7rlFKInq2UvJPTsj+yxnNnBayflmc3U6mCCQYae/gp3jMzMn9kEB1kfB05m6H+SOd7vnlczaHskPgZYQyEGuR9qCjX1Q0vXEwhbKQr0Pc8dmcE5JhNy/3CyMK/Whodi+KLizuMhrd3B+VPsrqO3Ivr5J5NSSCJEckK5NEUj1aHmhCCUoPgqK3Ssl9SC4Ix8hNksgdZQubiwMPc+UTXuLu8EtxRWFdi8RSB1AFPcWkvMTS69fngeCV7PtJoBTlgPGHFIBSKuvp9v2sllUVGtnEvr72WPjqmdmz0kgq8kXareFDsaD4Mkg9npUezF2cX0hV5y0kPAXgexOpqaOyRwejWIPpg/JSZN/LqrE7hsEJAieSi9uZUt6/poivLSMVNWh/HCLvRoXr/gZBNtyEMXuWqlNukbJbiyWASnTYqc4TIEEsT8nNm8+bsDbjwax6X6INt9SXLqsqdM4K935LbYjkJWB7Fu4DCtyetbQ64Bjo/SuDYr3BrTfn0ZK9tpI/9oFD2U3HwlkuIj5Lap9mc6Khrz5YP/SzQtbk2mcUbbSj2rPHfKhdy0MWbUXsfmg9lh2rZJepPK4mYFA9D8TFm4FEpttAye31W7xhnD4Roj2RczcoPu0CKQBhkQC8TchNqgc3kOWNq8QiPpDIBD1N55A1N9sAlF/gwlE/U0lEPU3kkDU3zwCUX/DCKQBJkUC8TcmEoi/GbEBhVsn6g+BQNTfeAJRf7MJRP0NJhD1N5VA1N9IAlF/8whE/Q0jkAaYFP9PQILYHu8vEddISZ/TUn2lnnk0BQuqeSC2vY6tkzGCQD0RoriqMpClKAGhoOpw1RupU+lTeNL/A2dOwTAQ9qTDVG2RQVEURVEURVEUNVK//gGU7bI0MkBkPgAAAABJRU5ErkJggg==" alt="SQL Database">
                 </div>
             </div>
         </div>
@@ -65,7 +66,7 @@
                 <h1 class="black">Programs</h1>
                 <div class="images">
                     <img src="../ASSESTS/visualstudio.svg" alt="Visual Studio">
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAACMUlEQVR4nMVVO2tUURBeFAtREFHQwkQFEdRSUKy0slbC3ZndRAWRBbVaV9l7Z+6dr9YuSS8o2GolJPEHiC+E9CJY+Gp8gEFRVObsZl03N7l3SSADU5w553zfzJnHqVTWSzhNj7DaNCnmWOxRnpJihhW3SHVkOHDJzrLiO4t9Y7XHPVDFV1Z8/Edgz1jsBys+1+LsRCnwc3G8w4FI7Qknya7+PVJ7SWIP+m1RjAOk9orVXjcajU3F3qtdYMWfmuDY4F4eQbiToBruJNnJYoLUmuEwsLMsQT3LjnacysYKCUhx2g9zgonSEShSv0MxDhYSRFG0kQTPQ+IEl7xC6nG83ZUE8yT2cHEdqe4nsRteEKS4Xykr48AeJwiRlFGxd1G7va00gdd/CFkxQ4prJGi4suBNF/QXq90hRcxisx2bTZcCjxIcZrXfpDY5uOc5CMQJ6v/ZBVPhTpoeKuP9VQeJ2hjNIyDF+yX2NvZ1IrbLhQQ1wRU/XFfdm0sg9mE5AneukMDDDOEKpvIIHKiqNr40ZyWfqAs02a2OWU6slZtkwV1PchiGwyS5Q6Ajy5UpKeZI7Kbnort+S4rrADaUAvdGY7UXJPaJBRdzGq3XyRGwtbTXg6Ni8J1XGhVDyYrDTjA/1EjIk6rgfHjvLDveb59otbawYiGvuoYS/3BI7AsLnkbAbrdFzeZmVrvHYj99NFdWK7UUZ8KXqVjoJbxTMfGqwRfFmyb0g/eC4DYpTq0Z+FrKX9CKl5+KTycwAAAAAElFTkSuQmCC" alt="Figma">
+                    <img src="../ASSESTS/figma.svg" alt="Figma">
                 </div>
             </div>
             <div class="rigthside">
@@ -84,9 +85,9 @@
         <div class="footer">
             <img src="../ASSESTS/github.svg" alt="GitHub">
             <a href="https://github.com/KoShLaBs"><h3 class="black">KoShLaBs</h3></a>
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAABZElEQVR4nO2UPUsDQRCG1w9EEC2sBP0vCrZqo+dsiCBop50hiDPJvK2FpaVW2tnZWdlaapNKf4B/IH4b2cudXuKZZGNs4g0MLDt773MzszvGZJZZ31oATFnGtRXU/sQZlTww0wClvfJ8BJ8kxlWvoU7TaSdZoVnWJ1vCiluvFQpjlvWid5nqZR6YcNo5Li8S68MXuH7o1TI2osxHiPXs15kKzteBUae5Kpq3rC9uvxlcs6LvJNgJ4UEwZBlH3UP1ZBYYruvrNrG+xbEU8KfvR6EBEhx00dNDAINhT1l3m+OtwG0/buFtf9q0AkdP4DQuV46xlSzXd29sE4ke/3TWtAWnXBASPKec87qYphNw/CSWisXxsOwlLFhBNRF/zHF52ecpmo7BzUNAMEeid5Zx69a+w8f4gKOeVwLm6bRxS6I3neoYb3CYud6T6Kabu87d2u35aJhuwL1wk4Htvyl1Zpn1lX0ACekh7r4qs5MAAAAASUVORK5CYII=">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAADhklEQVR4nO2bPWgUQRTH4wciiKIgKNhY2NjYaGMVGzsVVM55lwgBS600hNy9dzuvTSFoYWMQFCyttNLG2NhoY2MTQQsLC1EQ/EI0K3MGIeLuze7t7szq/wcPApf9+t3smzdv9yYmAAAAAAAAAAAAAAAAAAAAQIVM9Xo7iO1jEk0Rmu2A9UlXdedYss/Ozm4htg8gWjMk26UTc3NbKxnZHdVNhu0dyNY1ko3ovRnVzWWcrsv6YFJ1o2G9Bdm6Ktre7HQ6G8q4nDBibzuheRsb0cv/u2zDek1V12dJcl8Asd7ItOh7Oxi286EvlsLFgm+azRXtm+C7rOcN2x8RXHjaTNgVI3qpSOEwWvRwZNuno0qWM2Knjei38BK07vhOrOeKlsJeole/xecd5j15B+hycpxEP0cgI60pvnY5OZ3noKO6m1if/bltAdFD2a86Pd2XK7ufTBq2HyKQklYZRvQj9ZOjeddu5nUviX3xt+0Lih7m7DfU1wN5ByTWQ4bt239I8vtuLzmcK3kw2G/Yvs7aR3HRFR2Y2hIVDaxSoovcSoZ1ObgsKRujU6URPeKTKkuLHndyoOjDb/I3bL/47G9c0aXLHWp5B65oOVuF6FIFPMUaHgs0Enuh6AKtItHFl6QUYRi2d+tqOVQt2rvJQhGIXXPeNTfRKhfdxElT5SO5/sFRi+iWdf4Wmkh3tYmOv/NnV2hgLzY1gdcr2rNUMn2darjz13hJWr9oz+LfDPRYQ52/IIushkTH0fkzY3bgWiLar0EzlSQH6+j8hW6ENSs61AVz+NZu46Kp6c4f68uqOnCtE02ekxL1+7vGm5Sq7cC1VXTqU2bNqG4vVWbV0IFrs+jUt/NnRO8X2O/D2BZKEYjWSpfCdXbg/hXRqRF7Je89NdfcMayL2ZJ1cdQ7cMR6NcS1RSWa/F4YdKvIU0b0EbH9NKxg2C4RJyfztnHdRLfvUNcVoWj1uv2LEMMDhyhFU4UvdcfyCC1e0TL+zxRieigct2gZTnDLo5bPWct4t2AJff6tEU0u3KTHVnxSybTqNhIdxPayZTtEy2/h70jsdVdhuP6Fy78u3N+uEvn1mfufCM611aKlvQHRAtFp6FGIES3hxSF1SHipyNEC0WnoEYcRLeElIXVIeIHI0RJXYMEiEJ2GHoUY0RJeHFKHhJeKHC0RigYAAAAAAAAAAAAAAAAAAAATo/kJmJPX4g4m67EAAAAASUVORK5CYII=">
             <a href="mailto:gkather203@gmail.com">gkather203@gmail.com</a>
-            <img src="../ASSESTS/linkedin.svg" alt="linkedin">
+            <img src="../ASSESTS/linkedin.svg" class="linkedin" alt="linkedin">
             <a href="www.linkedin.com/in/kathe-gomez-4913a8210"><h3 class="black">kathe-gomez</h3></a>
         </div>
         <div class="wave"><img src="../ASSESTS/wave_five.svg" alt="waves"></div>

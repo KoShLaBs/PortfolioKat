@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - About Me</title>
+    <link rel="stylesheet" href="STYLES/style.css">
 </head>
 <body>
     <!--Header of the page, logo, and menu-->
@@ -19,7 +20,7 @@
             </nav>
         </div>
     </header>
-    <main>
+    <main class="index">
         <!--First frame, the name and profession-->
         <div class="name">
             <div class="texto-linea">
@@ -30,8 +31,8 @@
                 <h1 class="black">a</h1>
                 <!--the idea is to put this three phrases with an animation-->
                 <div class="types">
-                    <h1 class="blue">Web Designer</h1>
-                    <h1 class="blue">Web Developer</h1>
+                    <!-- <h1 class="blue">Web Designer</h1>
+                    <h1 class="blue">Web Developer</h1> -->
                     <h1 class="blue">Web Front-end</h1>
                 </div>
             </div>
@@ -41,7 +42,7 @@
         <div class="wave"><img src="ASSESTS/wave_two.svg" alt="waves"></div>
         <!--About me frame-->
         <div class="about">
-            <h2 class="black">Hey, i’m Katherynn Gomez, i'm passionate about design and creating. I'm a software developer, I've been developing for several years, working on several projects on a personal level as a challenge or with designer friends to expand my development area and capabilities. I have knowledge as a full stack developer, basing myself more on the frontend learning ux / ui to know everything step by step from the beginning. </h2>
+            <h2 class="black">Hey, I’m Katherynn Gomez. I’m passionate about design and creating. With several years of experience as a software developer, I've worked on numerous projects—some personal challenges and others collaborating with designer friends to broaden my development skills. My expertise spans full stack development, with a focus on frontend, where I've been delving into UX/UI to understand every aspect from the ground up.</h2>
         </div>
         <!--Part to divide the pages-->
         <div class="wave"><img src="ASSESTS/wave_three.svg" alt="waves"></div>
@@ -50,9 +51,9 @@
         <div class="footer">
             <img src="ASSESTS/github.svg" alt="GitHub">
             <a href="https://github.com/KoShLaBs"><h3 class="black">KoShLaBs</h3></a>
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAABZElEQVR4nO2UPUsDQRCG1w9EEC2sBP0vCrZqo+dsiCBop50hiDPJvK2FpaVW2tnZWdlaapNKf4B/IH4b2cudXuKZZGNs4g0MLDt773MzszvGZJZZ31oATFnGtRXU/sQZlTww0wClvfJ8BJ8kxlWvoU7TaSdZoVnWJ1vCiluvFQpjlvWid5nqZR6YcNo5Li8S68MXuH7o1TI2osxHiPXs15kKzteBUae5Kpq3rC9uvxlcs6LvJNgJ4UEwZBlH3UP1ZBYYruvrNrG+xbEU8KfvR6EBEhx00dNDAINhT1l3m+OtwG0/buFtf9q0AkdP4DQuV46xlSzXd29sE4ke/3TWtAWnXBASPKec87qYphNw/CSWisXxsOwlLFhBNRF/zHF52ecpmo7BzUNAMEeid5Zx69a+w8f4gKOeVwLm6bRxS6I3neoYb3CYud6T6Kabu87d2u35aJhuwL1wk4Htvyl1Zpn1lX0ACekh7r4qs5MAAAAASUVORK5CYII=">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAADhklEQVR4nO2bPWgUQRTH4wciiKIgKNhY2NjYaGMVGzsVVM55lwgBS600hNy9dzuvTSFoYWMQFCyttNLG2NhoY2MTQQsLC1EQ/EI0K3MGIeLuze7t7szq/wcPApf9+t3smzdv9yYmAAAAAAAAAAAAAAAAAAAAQIVM9Xo7iO1jEk0Rmu2A9UlXdedYss/Ozm4htg8gWjMk26UTc3NbKxnZHdVNhu0dyNY1ko3ovRnVzWWcrsv6YFJ1o2G9Bdm6Ktre7HQ6G8q4nDBibzuheRsb0cv/u2zDek1V12dJcl8Asd7ItOh7Oxi286EvlsLFgm+azRXtm+C7rOcN2x8RXHjaTNgVI3qpSOEwWvRwZNuno0qWM2Knjei38BK07vhOrOeKlsJeole/xecd5j15B+hycpxEP0cgI60pvnY5OZ3noKO6m1if/bltAdFD2a86Pd2XK7ufTBq2HyKQklYZRvQj9ZOjeddu5nUviX3xt+0Lih7m7DfU1wN5ByTWQ4bt239I8vtuLzmcK3kw2G/Yvs7aR3HRFR2Y2hIVDaxSoovcSoZ1ObgsKRujU6URPeKTKkuLHndyoOjDb/I3bL/47G9c0aXLHWp5B65oOVuF6FIFPMUaHgs0Enuh6AKtItHFl6QUYRi2d+tqOVQt2rvJQhGIXXPeNTfRKhfdxElT5SO5/sFRi+iWdf4Wmkh3tYmOv/NnV2hgLzY1gdcr2rNUMn2darjz13hJWr9oz+LfDPRYQ52/IIushkTH0fkzY3bgWiLar0EzlSQH6+j8hW6ENSs61AVz+NZu46Kp6c4f68uqOnCtE02ekxL1+7vGm5Sq7cC1VXTqU2bNqG4vVWbV0IFrs+jUt/NnRO8X2O/D2BZKEYjWSpfCdXbg/hXRqRF7Je89NdfcMayL2ZJ1cdQ7cMR6NcS1RSWa/F4YdKvIU0b0EbH9NKxg2C4RJyfztnHdRLfvUNcVoWj1uv2LEMMDhyhFU4UvdcfyCC1e0TL+zxRieigct2gZTnDLo5bPWct4t2AJff6tEU0u3KTHVnxSybTqNhIdxPayZTtEy2/h70jsdVdhuP6Fy78u3N+uEvn1mfufCM611aKlvQHRAtFp6FGIES3hxSF1SHipyNEC0WnoEYcRLeElIXVIeIHI0RJXYMEiEJ2GHoUY0RJeHFKHhJeKHC0RigYAAAAAAAAAAAAAAAAAAAATo/kJmJPX4g4m67EAAAAASUVORK5CYII=">
             <a href="mailto:gkather203@gmail.com">gkather203@gmail.com</a>
-            <img src="ASSESTS/linkedin.svg" alt="linkedin">
+            <img src="ASSESTS/linkedin.svg" class="linkedin" alt="linkedin">
             <a href="www.linkedin.com/in/kathe-gomez-4913a8210"><h3 class="black">kathe-gomez</h3></a>
         </div>
         <div class="wave"><img src="ASSESTS/wave_five.svg" alt="waves"></div>

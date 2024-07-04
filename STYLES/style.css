@@ -1,0 +1,28 @@
+@import url(footer.css);
+@import url(font.css);
+@import url(index/index.css);
+@import url(header.css);
+@import url(projects/projects.css);
+@import url(skills/skills.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #D3D0CB;
+}
+
+a{
+    text-decoration: none;
+    color: #1E1E1E;
+}
+
+.wave img{
+    width: 100%;
+    position: static;
+}
+
+.wave{
+    display: flex;
+    justify-content: end;
+}
+
