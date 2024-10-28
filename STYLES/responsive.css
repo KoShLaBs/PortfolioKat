@@ -1,0 +1,27 @@
+@media screen and (min-width: 500px ) and (max-width: 1165px)  {
+    .wave img{
+        min-width: 140%;
+        
+    }
+    .name .black{
+        font-size: 5rem;
+    }
+    .name .blue{
+        font-size: 5rem;
+    }
+    .footer{
+        gap: 1.2rem;
+    }
+}
+
+@media screen and (min-width: 200px ) and (max-width: 499px)  {
+    .wave img{
+        min-width: 160%;
+    }
+    .name .black{
+        font-size: 3rem;
+    }
+    .name .blue{
+        font-size: 3rem;
+    }
+}

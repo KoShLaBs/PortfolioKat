@@ -4,6 +4,7 @@
 @import url(header.css);
 @import url(projects/projects.css);
 @import url(skills/skills.css);
+@import url(responsive.css);
 
 *{
     margin: 0;
